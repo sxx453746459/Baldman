@@ -1,9 +1,10 @@
 const express = require('express')
+
+const router = require('./router')
+
 const app = express()
 
-app.get('/',( req, res)=>{
-    res.send('Hello world!')
-})
+app.use(router)
 
 
 app.listen(3000,() => console.log('服务器正在运行中······'))
