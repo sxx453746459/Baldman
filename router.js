@@ -26,6 +26,15 @@ router
     .post('/signup',user.signup)
     .post('/signout',user.signout)
 
+//话题相关
+router
+    .get('./topic/create',topic.showCreate)
+    .get('./topic/create',topic.create)
+    .get('./topic/topicID',topic.show)
+    .get('./topic/topicID/edit',topic.showEdit)
+    .get('./topic/topicID/edit',topic.edit)
+    .get('./topic/topicID/delete',topic.delete)
+
 //3.导出路由对象
 module.exports = router 
 //4.在app.js中通过 app.use(路由对象) 挂载使之生效
