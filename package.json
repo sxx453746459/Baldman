@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/sxx453746459/Baldman#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-art-template": "^1.0.1"
   }
 }
